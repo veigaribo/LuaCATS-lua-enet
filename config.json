@@ -1,0 +1,6 @@
+{
+    "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/refs/heads/main/schemas/addon_config.schema.json",
+    "words": [
+        "require[%s%(\"']+enet[%)\"']"
+    ]
+}
