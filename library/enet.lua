@@ -282,3 +282,5 @@ function peer:timeout(limit, minimum, maximum) end
 ---@return number minimum # timeout value in milliseconds that a reliable packet has to be acknowledged if the variable timeout limit was exceeded
 ---@return number maximum # fixed timeout in milliseconds for which any packet has to be acknowledged
 function peer:timeout() end
+
+return enet
