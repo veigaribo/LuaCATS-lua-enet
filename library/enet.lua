@@ -130,6 +130,11 @@ function host:bandwidth_limit(incoming, outgoing) end
 ---@return number
 function host:total_sent_data() end
 
+---Returns the number of bytes that were received by the
+---given host.
+---@return number
+function host:total_received_data() end
+
 ---Returns the timestamp of the last call to `host:service()`
 ---or `host:flush()`.
 ---@return number
@@ -146,14 +151,15 @@ function host:peer_count() end
 ---the corresponding host and re-uses unused peers for new
 ---connections. You can query the state of a peer using
 ---`peer:state`.
+---@param index number
 ---@return ENetPeer
-function host:get_peer() end
+function host:get_peer(index) end
 
 ---Returns a string that describes the socket address of
 ---the given host. The string is formatted as `“a.b.c.d:port”`,
 ---where `“a.b.c.d”` is the ip address of the used socket.
 ---@return string
-function host:get_sock_address() end
+function host:get_socket_address() end
 
 ---@class ENetPeer
 local peer = {}
