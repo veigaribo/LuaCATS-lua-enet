@@ -75,6 +75,7 @@ local host = {}
 ---@param address string # `<ipaddress>:<port>` or `<hostname>:<port>` or `*:<port>`
 ---@param channel_count? number # defaults to `1`
 ---@param data? number # an integer value that can be associated with the connect event. Defaults to `0`
+---@return ENetPeer
 function host:connect(address, channel_count, data) end
 
 ---Wait for events, send and receive any ready packets. `timeout`
